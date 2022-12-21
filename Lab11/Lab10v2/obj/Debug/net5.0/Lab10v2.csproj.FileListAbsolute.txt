@@ -151,8 +151,8 @@ C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\refint\Lab10v2.dll
 C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\Lab10v2.pdb
 C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\Lab10v2.genruntimeconfig.cache
 C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\ref\Lab10v2.dll
-C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\Razor\Views\ShopCarts\Index.cshtml.g.cs
 C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\Razor\Views\Articles\Create.cshtml.g.cs
 C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\Razor\Views\Articles\Delete.cshtml.g.cs
 C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\Razor\Views\Articles\Details.cshtml.g.cs
 C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\Razor\Views\Articles\Edit.cshtml.g.cs
+C:\Users\ms200\source\repos\Lab10v2\obj\Debug\net5.0\Razor\Views\CartItems\Index.cshtml.g.cs

@@ -7,7 +7,7 @@
 </p>
 <div class="col-md-3">
 
-    <a asp-controller="ShopCarts" asp-action="Index">Shopping Cart</a>
+    <a asp-controller="CartItems" asp-action="Index">Shopping Cart</a>
     <form>
         <div class="form-group">
             <label class="control-label"></label>
@@ -62,7 +62,7 @@
                 </td>
                 <td>
                     <a asp-controller="Articles" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-controller="ShopCarts" asp-action="BuyArticle" asp-route-id="@item.Id">Buy</a>
+                    <a asp-controller="CartItems" asp-action="BuyArticle" asp-route-id="@item.Id">Buy</a>
 
                 </td>
             </tr>

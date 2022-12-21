@@ -1,0 +1,92 @@
+﻿@model IEnumerable<Lab10v2.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@{
+    double total = 0;
+}
+
+
+<h1 class="start">Shopping Cart</h1>
+<p>
+    <a asp-controller="Shop" asp-action="Index">Back to shop</a>
+</p>
+
+<p style="font-size:30px" class="info">
+    @TempData["Message"]
+</p>
+
+@if(Model.Count() == 0) {
+    <p style="font-size:30px" class="warning">
+        Your cart is empty!
+    </p>
+}
+
+
+ <table class="table">
+    <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Article.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TotalPrice)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Article.Category)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Article.Image)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Amount)
+                    </th>
+                    <th></th>
+                </tr>
+    </thead>
+        <tbody>
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Article.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalPrice)
+                        @{
+                            total = total + item.TotalPrice;
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category.Name)
+                    </td>
+                    <td>
+                        <img src="@Url.Content(item.Article.FilePath)" asp-append-version="true" width="50" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        <a asp-action="Increase" asp-route-id="@item.Id">+</a> |
+                        <a asp-action="Decrease" asp-route-id="@item.Id">-</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        } else {
+            <p style="font-size:40px" class="warning">
+                Your cart is empty!
+            </p>
+        }
+    </tbody>
+</table>
+        
+
+@{
+    total = Math.Round(total, 4);
+} 
+
+<h3 class="start">Total @total</h3>

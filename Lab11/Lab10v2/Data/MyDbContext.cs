@@ -18,6 +18,6 @@ namespace Lab10v2.Data
             modelBuilder.Seed();
         }
 
-        public DbSet<Lab10v2.Models.ShopCart> ShopCart { get; set; }
+        public DbSet<Lab10v2.Models.CartItem> ShopCart { get; set; }
     }
 }
