@@ -7464,11 +7464,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ms200\\source\\repos\\Lab10v2\\Lab10v2.csproj",
+      "projectUniqueName": "C:\\Users\\ms200\\ASP.NET\\Lab10v2\\Lab10v2.csproj",
       "projectName": "Lab10v2",
-      "projectPath": "C:\\Users\\ms200\\source\\repos\\Lab10v2\\Lab10v2.csproj",
+      "projectPath": "C:\\Users\\ms200\\ASP.NET\\Lab10v2\\Lab10v2.csproj",
       "packagesPath": "C:\\Users\\ms200\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ms200\\source\\repos\\Lab10v2\\obj\\",
+      "outputPath": "C:\\Users\\ms200\\ASP.NET\\Lab10v2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
